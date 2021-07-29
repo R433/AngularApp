@@ -1,0 +1,152 @@
+
+<nav  class="navbar navbar-light " id="n1">
+    <div class="container-fluid">
+    <h3 id="h">My Angular app</h3>
+    <div d-flex>
+        <button  type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal"  class="btn btn-success mx-3">add product</button>
+        <button  type="button"  class="btn btn-success">logut</button>
+    
+    </div>
+    </div>
+    </nav>
+    <table class="container table mt-3">
+    
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">SKU</th>
+                <th scope="col">Description</th>
+                <th scope="col">Price</th>
+                <th scope="col">Stock level</th>
+                <th scope="col">action</th>
+                
+            </tr>
+        </thead>
+            <tbody>
+                <tr>
+                    <td>Samsung</td>
+                    <th>SGAL9</th>
+                    <th>5.8 inch screen with Facial rcognation.iris Scanner</th>
+                    <th>679</th>
+                    <th>100</th>
+                    <td>
+                        <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal1">Update</button>
+                        <button class="btn btn-danger mx-3">delete</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Iphone X</td>
+                    <th>AIpHX</th>
+                    <th>5.8 inch screen with Facial rcognation</th>
+                    <th>899</th>
+                    <th>100</th>
+                    <td>
+                        <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal1">Update</button>
+                        <button class="btn btn-danger mx-3">delete</button>
+                    </td>
+                </tr>
+            </tbody>
+      
+    </table>
+    
+   
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">add products</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="name" aria-describedby="name">
+                  
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">SKU</label>
+                  <input type="text" class="form-control" id="sku">
+                </div>
+
+
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Description</label>
+                    <input type="text" class="form-control" id="eku">
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Price</label>
+                    <input type="text" class="form-control" id="eku">
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Stock level</label>
+                    <input type="text" class="form-control" id="eku">
+                  </div>
+                
+              </form>
+
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">add</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">add products</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="name" aria-describedby="name">
+                  
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">SKU</label>
+                  <input type="text" class="form-control" id="sku">
+                </div>
+
+
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Description</label>
+                    <input type="text" class="form-control" id="eku">
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Price</label>
+                    <input type="text" class="form-control" id="eku">
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Stock level</label>
+                    <input type="text" class="form-control" id="eku">
+                  </div>
+                
+              </form>
+
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success">update</button>
+        </div>
+      </div>
+    </div>
+  </div>
